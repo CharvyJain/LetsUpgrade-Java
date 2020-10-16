@@ -1,20 +1,22 @@
 package com.Percentage;
 import java.util.Scanner;
 public class Results {
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args) {
 		int Maths,Computers,English,Hindi,Science;
 		float total,percentage;
 		Scanner sc= new Scanner(System.in);
 		
-		System.out.println("Enter Marks of Below Subjects :");
-		Maths=sc.nextInt();
-		Computers=sc.nextInt();
-		English=sc.nextInt();
-		Hindi=sc.nextInt();
-		Science=sc.nextInt();
-	
+		System.out.print("Enter marks for Maths : ");
+        	Maths=sc.nextInt();
+        	System.out.print("Enter mark for Computers : ");
+       		Computers=sc.nextInt();
+        	System.out.print("Enter mark for English : ");
+        	English=sc.nextInt();
+        	System.out.print("Enter mark for Hindi : ");
+        	Hindi=sc.nextInt();
+        	System.out.print("Enter mark for Science : ");
+        	Science=sc.nextInt();
+		
 		total=Maths+Computers+English+Hindi+Science;
 		percentage=(total/500)*100;
 		 
@@ -42,9 +44,9 @@ public class Results {
 			System.out.println("You got E Grade");
 		}
 		else 
-	  {
+	  	{
 		System.out.println("Sorry!! You are Fail");
-	  }
+	  	}
 	
   }
 }
