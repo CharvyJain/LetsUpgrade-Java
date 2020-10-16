@@ -1,4 +1,4 @@
-package com.day3;
+package com.employee_salary;
 
 public class Main {
 
