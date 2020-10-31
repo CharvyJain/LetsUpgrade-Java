@@ -26,7 +26,7 @@ public class Game
     String[] option1 = {"Dynamic", "JVM", "char ch = '\utea';", "Object", "ABH8097","0", "javap tool", "for ( int i = 99; i >= 0; i / 9 )", "Serialization", "java.util package",};
     String[] option2 = {"Architecture Neutral", "JRE", "char ca = 'tea';", "Animation/movie file", "L990023","Not a Number", "javaw command", "for ( int i = 7; i <= 77; i += 7 )", "Variable Shadowing", "java.lang package",};
     String[] option3 = {"Use of pointers", "JDK", "char cr = \u0223;", "long", "904423","Infinity", "Javadoc tool", "for ( int i = 20; i >= 2; - -i )", "Abstraction", "java.awt package",};
-    String[] option4 = {"Object-oriented", "JDB", char cc = '\itea';", "void", "0xnf029L","Run time exception", "javah command", "for ( int i = 2; i <= 20; i = 2* i )", "Multi-threading", "java.io package",};
+    String[] option4 = {"Object-oriented", "JDB", char cc = '\itea';", "void", "0xnf029L", "Run time exception", "javah command", "for ( int i = 2; i <= 20; i = 2* i )", "Multi-threading", "java.io package",};
     
     int[] answers = {c, d, a, b, d, c, c, a, b, a};
 
@@ -57,15 +57,15 @@ public class Game
             boolean status=questions[i].askQuestion();
             if(status==true)
             {
-                System.out.println("Correct");
-                player.score+=2;
+                System.out.println("Your chosen answer is correct");
+                player.score+=5;
             }
             else
             {
-                System.out.println("Incorrect");
-                player.score--;
+                System.out.println("Bad luck! Incorrect answer");
+                player.score-=3;
             }
         }
-        System.out.println("\n" + player.name + " your score is " + player.score + " out of 10.");
+        System.out.println("\n" + player.name + " score is " + player.score");
     }
 }
