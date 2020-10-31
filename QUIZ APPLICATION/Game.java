@@ -30,16 +30,12 @@ public class Game
     
     int[] answers = {c, d, a, b, d, c, c, a, b, a};
 
-    public void initGame()
-    {
-        for (int i=0;i<10;i++)
-        {
+    public void initGame() {
+        for (int i=0;i<10;i++) {
             questions[i]=new Question();
         }
 
-
-        for(int i = 0; i<10; i++)
-        {
+        for(int i = 0; i<10; i++) {
             questions[i].question=questionsData[i];
             questions[i].option1=option1[i];
             questions[i].option2=option2[i];
@@ -49,19 +45,15 @@ public class Game
         }
     }
 
-    public void play()
-    {
+    public void play() {
         player.getDetails();
-        for(int i=0;i<10;i++)
-        {
+        for(int i=0;i<10;i++) {
             boolean status=questions[i].askQuestion();
-            if(status==true)
-            {
+            if(status==true) {
                 System.out.println("Your chosen answer is correct");
                 player.score+=5;
             }
-            else
-            {
+            else {
                 System.out.println("Bad luck! Incorrect answer");
                 player.score-=3;
             }
