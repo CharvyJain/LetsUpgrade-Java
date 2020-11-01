@@ -13,7 +13,7 @@ public class Engineer extends Employee {
       System.out.println("Enter Years of Experience: ");
 		  yearsOfExperience = sc.nextInt();
 		  System.out.println("Enter your experienced Language: ");
-		  this.experienceLanguage = sc.next();
+		  experienceLanguage = sc.next();
 		}
 
  public void displaydetailsfore() {
