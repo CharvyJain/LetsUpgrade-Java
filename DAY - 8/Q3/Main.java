@@ -43,13 +43,13 @@ public class Main {
         //Printing Engineers Details
         for (int i=0; i<3; i++){
             engineers[i].displayDetails();
-            doctors[i].displaydetailsfore();
+            engineers[i].displaydetailsfore();
         }
 
         //Printing Pilots Details
         for (int i=0; i<3; i++){
-            engineers[i].displayDetails();
-             doctors[i].displaydetailsforp();
+            pilots[i].displayDetails();
+            pilots[i].displaydetailsforp();
         }
 
     }
